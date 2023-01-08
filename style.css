@@ -105,6 +105,9 @@ form {
   box-shadow: 0rem 0.7rem 0rem 0rem hsla(0, 49%, 57%, 0.663);
 }
 
+.input-container {
+  margin-bottom: 2rem;
+}
 input {
   font-size: 1.6rem;
   font-weight: 600;
@@ -112,7 +115,7 @@ input {
 
   display: block;
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   padding: 2rem 3rem;
   border-radius: 0.5rem;
   border: 1px solid var(--clr-grayish-blue);
@@ -124,7 +127,15 @@ input {
   background-size: 2.4rem;
   background-position: 92%;
 }
-.error-message {
+.error-msg {
+  display: none;
+}
+.error-msg__active {
+  display: block;
+  text-align: right;
+  font-size: 1.1rem;
+  color: var(--clr-red);
+  font-weight: 600;
 }
 
 .cta-button {

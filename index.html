@@ -32,10 +32,24 @@
           </p>
         </div>
         <form class="cta-form">
-          <input class="form-el" type="text" placeholder="First Name" />
-          <input class="form-el" type="text" placeholder="Last Name" />
-          <input class="form-el" type="email" placeholder="Email Address" />
-          <input class="form-el" type="password" placeholder="Password" />
+          <div class="input-container">
+            <input class="form-el" type="text" placeholder="First Name" />
+            <p class="error-msg" data-input="1">First Name cannot be empty</p>
+          </div>
+          <div class="input-container">
+            <input class="form-el" type="text" placeholder="Last Name" />
+            <p class="error-msg" data-input="2">Last Name cannot be empty</p>
+          </div>
+          <div class="input-container">
+            <input class="form-el" type="email" placeholder="Email Address" />
+            <p class="error-msg" data-input="3">
+              Looks like this is not an email
+            </p>
+          </div>
+          <div class="input-container">
+            <input class="form-el" type="password" placeholder="Password" />
+            <p class="error-msg" data-input="4">Password cannot be empty</p>
+          </div>
           <button class="cta-button">claim your free trial</button>
           <p class="terms-and-service">
             By clicking the button, you are agreeing to our
